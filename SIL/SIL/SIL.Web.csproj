@@ -94,20 +94,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\contact.html" />
-    <Content Include="app\assets\images\banner.jpg" />
-    <Content Include="app\assets\images\people-coffee-notes-tea.jpg" />
-    <Content Include="app\assets\images\people-woman-coffee-meeting.jpg" />
-    <Content Include="app\assets\images\pexels-photo-50631.jpeg" />
-    <Content Include="app\assets\images\pexels-photo-58737.jpeg" />
-    <Content Include="app\assets\images\pic01.jpg" />
-    <Content Include="app\assets\images\pic02.jpg" />
-    <Content Include="app\assets\images\pic03.jpg" />
-    <Content Include="app\assets\images\pic04.jpg" />
-    <Content Include="app\index.html" />
-    <Content Include="app\left-sidebar.html" />
-    <Content Include="app\no-sidebar.html" />
-    <Content Include="app\right-sidebar.html" />
+    <Content Include="contact.html" />
+    <Content Include="assets\images\banner.jpg" />
+    <Content Include="assets\images\people-coffee-notes-tea.jpg" />
+    <Content Include="assets\images\people-woman-coffee-meeting.jpg" />
+    <Content Include="assets\images\pexels-photo-50631.jpeg" />
+    <Content Include="assets\images\pexels-photo-58737.jpeg" />
+    <Content Include="assets\images\pic01.jpg" />
+    <Content Include="assets\images\pic02.jpg" />
+    <Content Include="assets\images\pic03.jpg" />
+    <Content Include="assets\images\pic04.jpg" />
+    <Content Include="index.html" />
+    <Content Include="left-sidebar.html" />
+    <Content Include="no-sidebar.html" />
+    <Content Include="right-sidebar.html" />
     <Content Include="gulpfile.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -136,10 +136,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\assets\css\" />
-    <Folder Include="app\assets\fonts\" />
-    <Folder Include="app\assets\js\" />
+    <Folder Include="assets\css\" />
+    <Folder Include="assets\fonts\" />
+    <Folder Include="assets\js\" />
     <Folder Include="dist\" />
+    <Folder Include="src\app\" />
     <Folder Include="Styles\base\" />
     <Folder Include="Styles\components\" />
   </ItemGroup>
