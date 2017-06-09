@@ -1,0 +1,19 @@
+{
+  "name": "spanish_in_london",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "angular-2": "^1.0.0",
+    "typescript": "^2.3.4",
+    "typings": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
