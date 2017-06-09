@@ -1,6 +1,6 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
+@import 'variables/_vars';
+@import 'variables/_functions';
+@import 'mixins/_mixins';
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
@@ -10,7 +10,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-	@import "libs/skel";
+	@import "vendor/_skel";
 
 	@include skel-breakpoints((
 		wide: '(max-width: 1680px)',
@@ -583,7 +583,7 @@
 
 		&.style2 {
 			background-color: _palette(one, bg);
-			background-image: url('images/light-bl.svg'), url('images/light-br.svg');
+			background-image: url('../assets/images/pexels-photo-50631.jpeg'), url('../images/pexels-photo-50631.jpeg');
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: $pattern-background-size, $pattern-background-size;

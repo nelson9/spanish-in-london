@@ -94,16 +94,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\images\banner.jpg" />
-    <Content Include="app\images\people-coffee-notes-tea.jpg" />
-    <Content Include="app\images\people-woman-coffee-meeting.jpg" />
-    <Content Include="app\images\pexels-photo-50631.jpeg" />
-    <Content Include="app\images\pexels-photo-58737.jpeg" />
-    <Content Include="app\images\pic01.jpg" />
-    <Content Include="app\images\pic02.jpg" />
-    <Content Include="app\images\pic03.jpg" />
-    <Content Include="app\images\pic04.jpg" />
+    <Content Include="app\contact.html" />
+    <Content Include="app\assets\images\banner.jpg" />
+    <Content Include="app\assets\images\people-coffee-notes-tea.jpg" />
+    <Content Include="app\assets\images\people-woman-coffee-meeting.jpg" />
+    <Content Include="app\assets\images\pexels-photo-50631.jpeg" />
+    <Content Include="app\assets\images\pexels-photo-58737.jpeg" />
+    <Content Include="app\assets\images\pic01.jpg" />
+    <Content Include="app\assets\images\pic02.jpg" />
+    <Content Include="app\assets\images\pic03.jpg" />
+    <Content Include="app\assets\images\pic04.jpg" />
     <Content Include="app\index.html" />
+    <Content Include="app\left-sidebar.html" />
+    <Content Include="app\no-sidebar.html" />
+    <Content Include="app\right-sidebar.html" />
     <Content Include="gulpfile.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -113,10 +117,11 @@
     <Content Include="Styles\ie8.scss" />
     <Content Include="Styles\ie9.scss" />
     <Content Include="Styles\main.scss" />
-    <Content Include="Styles\vendor\_functions.scss" />
-    <Content Include="Styles\vendor\_mixins.scss" />
+    <Content Include="Styles\variables\_functions.scss" />
+    <Content Include="Styles\mixins\_mixins.scss" />
     <Content Include="Styles\vendor\_skel.scss" />
-    <Content Include="Styles\vendor\_vars.scss" />
+    <Content Include="Styles\variables\_vars.scss" />
+    <Content Include="Styles\styles.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -133,11 +138,10 @@
   <ItemGroup>
     <Folder Include="app\assets\css\" />
     <Folder Include="app\assets\fonts\" />
-    <Folder Include="app\assets\images\" />
     <Folder Include="app\assets\js\" />
     <Folder Include="dist\" />
+    <Folder Include="Styles\base\" />
     <Folder Include="Styles\components\" />
-    <Folder Include="Styles\helpers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
