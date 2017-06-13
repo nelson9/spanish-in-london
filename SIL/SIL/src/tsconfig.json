@@ -11,12 +11,13 @@
     "suppressImplicitAnyIndexErrors": true,
     "watch": true,
     "typeRoots": [
-      "../../node_modules/@types/"
+      "../node_modules/@types/"
     ]
   },
   "compileOnSave": true,
+  "include": ["main.ts"],
   "exclude": [
-    "node_modules/*",
+    "../node_modules/*",
     "**/*-aot.ts"
   ]
 }

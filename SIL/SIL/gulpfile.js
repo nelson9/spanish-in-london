@@ -9,7 +9,7 @@ var concat = require("gulp-concat");
 var paths = {
     distroot: "dist",
     stylesroot: "Styles",
-    appRoot: "app"
+    appRoot: "src/"
 };
 
 paths.sass = paths.stylesroot + "/styles.scss";

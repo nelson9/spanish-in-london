@@ -9,8 +9,7 @@ const routes: Routes = [
      { path: 'home', component: HomeComponent },
      { path: 'contact', component: ContactComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: '**', redirectTo: 'home', pathMatch: 'full' },
-  
+      { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -19,6 +18,6 @@ const routes: Routes = [
 })
 export class AppRoutingModule{}
 
-export const routableComponents = [PageNotFoundComponent]
+export const routableComponents = [PageNotFoundComponent];
     
  

@@ -15,7 +15,7 @@ var routes = [
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'contact', component: contact_component_1.ContactComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: '**', redirectTo: 'home', pathMatch: 'full' },
+    { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

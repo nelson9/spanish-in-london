@@ -990,7 +990,7 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  color: #3fb1a3;
+  color: #907714;
   text-decoration: none;
   border-bottom: dotted 1px; }
   a:hover {
@@ -1114,7 +1114,7 @@ textarea {
   input[type="password"]:focus,
   input[type="email"]:focus,
   textarea:focus {
-    border-color: #83d3c9; }
+    border-color: #E1BC29; }
 
 input[type="text"],
 input[type="password"],
@@ -1341,15 +1341,15 @@ input[type="reset"],
   input[type="submit"].special,
   input[type="reset"].special,
   .button.special {
-    background: #83d3c9;
-    border-color: #83d3c9;
+    background: #E1BC29;
+    border-color: #E1BC29;
     color: #fff !important; }
     input[type="button"].special:hover,
     input[type="submit"].special:hover,
     input[type="reset"].special:hover,
     .button.special:hover {
-      background: #96dad1 !important;
-      border-color: #96dad1 !important; }
+      background: #e4c33f !important;
+      border-color: #e4c33f !important; }
   input[type="button"].fit,
   input[type="submit"].fit,
   input[type="reset"].fit,
@@ -1370,7 +1370,7 @@ input[type="reset"],
   .wrapper.style1 {
     padding: 0; }
   .wrapper.style2 {
-    background-color: #83d3c9;
+    background-color: #E1BC29;
     background-image: url("images/light-bl.svg"), url("images/light-br.svg");
     background-position: bottom left, bottom right;
     background-repeat: no-repeat, no-repeat;
@@ -1381,15 +1381,15 @@ input[type="reset"],
     .wrapper.style2 .button.special {
       background: #fff;
       border-color: #fff;
-      color: #83d3c9 !important; }
+      color: #E1BC29 !important; }
       .wrapper.style2 .button.special:hover {
         border-color: inherit !important;
         color: #fff !important; }
   .wrapper.style3 {
-    background: #fff;
+    background: #91C7B1;
     color: inherit; }
   .wrapper.style4 {
-    background: #fff;
+    background: #91C7B1;
     color: inherit;
     padding: 4em; }
 
@@ -1534,7 +1534,7 @@ input[type="reset"],
       padding: 0 1em;
       border: 0; }
     .dropotron > li:hover > a {
-      background: #83d3c9;
+      background: #E1BC29;
       color: #fff; }
     .dropotron > li:first-child {
       border-top: 0; }
@@ -1566,7 +1566,7 @@ input[type="reset"],
 
 #banner {
   background-attachment: scroll, scroll, scroll, fixed;
-  background-color: #645862;
+  background-color: #54494B;
   background-image: url("../../assets/images/pexels-photo-50631.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1640,7 +1640,7 @@ body.index #main {
 /* CTA */
 #cta {
   background-attachment: scroll, scroll, scroll, fixed;
-  background-color: #645862;
+  background-color: #54494B;
   background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../assets/images/banner.jpg");
   background-position: top left, top right, top left, bottom center;
   background-repeat: no-repeat, no-repeat, repeat, no-repeat;
@@ -1913,7 +1913,7 @@ body.index #main {
     top: 0;
     width: 275px;
     z-index: 10002;
-    background: #1c2021;
+    background: #E15554;
     color: #fff;
     font-size: 0.8em;
     letter-spacing: 0.075em;
