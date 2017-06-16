@@ -31,3 +31,11 @@ C:\Tech Time\spanish-in-london\SIL\SIL\bin\Microsoft.CodeDom.Providers.DotNetCom
 C:\Tech Time\spanish-in-london\SIL\SIL\obj\Debug\SIL.Web.csprojResolveAssemblyReference.cache
 C:\Tech Time\spanish-in-london\SIL\SIL\obj\Debug\SIL.dll
 C:\Tech Time\spanish-in-london\SIL\SIL\obj\Debug\SIL.pdb
+C:\Tech Time\spanish-in-london\SIL\SIL\bin\Newtonsoft.Json.dll
+C:\Tech Time\spanish-in-london\SIL\SIL\bin\System.Net.Http.Formatting.dll
+C:\Tech Time\spanish-in-london\SIL\SIL\bin\System.Web.Http.dll
+C:\Tech Time\spanish-in-london\SIL\SIL\bin\System.Web.Http.WebHost.dll
+C:\Tech Time\spanish-in-london\SIL\SIL\bin\Newtonsoft.Json.xml
+C:\Tech Time\spanish-in-london\SIL\SIL\bin\System.Net.Http.Formatting.xml
+C:\Tech Time\spanish-in-london\SIL\SIL\bin\System.Web.Http.xml
+C:\Tech Time\spanish-in-london\SIL\SIL\bin\System.Web.Http.WebHost.xml

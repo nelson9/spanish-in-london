@@ -9,14 +9,15 @@ import { HomeComponent} from './home/home.component';
 import { ContactComponent} from './contact/contact.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule        
-  ],
-  declarations: [
-    AppComponent, routableComponents, HomeComponent, ContactComponent 
-  ],
-  bootstrap: [ AppComponent ]
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        HttpModule
+    ],
+    declarations: [
+        AppComponent, routableComponents, HomeComponent, ContactComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -12,29 +12,29 @@
 
 							<!-- Content -->
 								<div class="content">
-									<form>
+									<form #form="ngForm" (ngSubmit)="submitForm(form.value)">
 										<div class="row 50%">
 											<div class="6u 12u(mobile)">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" ngModel required placeholder="Name" />
 											</div>
 											<div class="6u 12u(mobile)">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="text" name="email" ngModel required placeholder="Email" />
 											</div>
 										</div>
 										<div class="row 50%">
 											<div class="12u">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" name="subject" ngModel placeholder="Subject" />
 											</div>
 										</div>
 										<div class="row 50%">
 											<div class="12u">
-												<textarea name="message" placeholder="Message" rows="7"></textarea>
+												<textarea name="message" placeholder="Message" ngModel required rows="7"></textarea>
 											</div>
 										</div>
 										<div class="row">
 											<div class="12u">
 												<ul class="buttons">
-													<li><input type="submit" class="special" value="Send Message" /></li>
+													<li><input type="submit" class="special"  value="Send Message" /></li>
 												</ul>
 											</div>
 										</div>
