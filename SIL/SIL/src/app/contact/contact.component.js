@@ -12,10 +12,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 require("rxjs/add/operator/map");
 var contact_service_1 = require("./contact.service");
+var contact_1 = require("./contact");
 var ContactComponent = (function () {
     function ContactComponent(contactService) {
         this.contactService = contactService;
         this.pageTitle = 'Contact';
+        this.submitted = false;
+        this.contact = new contact_1.Contact("", "", "", "");
     }
     ContactComponent.prototype.submitForm = function (value) {
         this.contactService.sendContactMessage(value);

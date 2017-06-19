@@ -13,8 +13,10 @@ export class ContactComponent {
 
     constructor(private contactService: ContactService) { }
 
-    public pageTitle: string = 'Contact';
+    pageTitle: string = 'Contact';
+    submitted = false;
     
+    contact = new Contact("","","","");
 
     submitForm(value: Contact) {      
         this.contactService.sendContactMessage(value);

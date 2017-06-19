@@ -15,6 +15,8 @@ var http_2 = require("@angular/http");
 var Observable_1 = require("rxjs/Observable");
 require("rxjs/add/operator/catch");
 require("rxjs/add/operator/map");
+require("rxjs/add/operator/toPromise");
+///<reference path="node_modules/angular2/typings/browser.d.ts"/>
 var ContactService = (function () {
     function ContactService(http) {
         this.http = http;
@@ -23,9 +25,9 @@ var ContactService = (function () {
     ContactService.prototype.sendContactMessage = function (contact) {
         var headers = new http_2.Headers({ 'Content-Type': 'application/json' });
         var options = new http_2.RequestOptions({ headers: headers });
-        return this.http.post(this.contactUrl, contact, options)
-            .map(this.extractData)
-            .catch(this.handleError);
+        return this.http.post(this.contactUrl, contact, options).toPromise()
+            .then(this.extractData)
+            .catch();
     };
     ContactService.prototype.handleError = function (error) {
         console.error(error);
@@ -33,6 +35,7 @@ var ContactService = (function () {
     };
     ContactService.prototype.extractData = function (res) {
         var body = res.json();
+        console.log(body.data);
         return body.data || {};
     };
     return ContactService;

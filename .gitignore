@@ -38,3 +38,11 @@ Thumbs.db
 
 SIL/SIL/node_modules/
 
+*.dll
+SIL/.vs/SIL/v14/.suo
+
+SIL/packages/*.*
+
+SIL/SIL/bin/*.*
+*.pdb
+*.map

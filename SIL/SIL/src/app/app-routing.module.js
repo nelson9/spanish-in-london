@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var home_component_1 = require("./home/home.component");
 var contact_component_1 = require("./contact/contact.component");
+///<reference path="node_modules/angular2/typings/browser.d.ts"/>
 var page_not_found_component_1 = require("./page-not-found.component");
 var routes = [
     { path: 'home', component: home_component_1.HomeComponent },
