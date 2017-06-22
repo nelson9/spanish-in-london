@@ -1762,8 +1762,6 @@ body.index #main {
     .wrapper.style4 {
       padding: 2.5em; }
   /* Banner */
-  #banner {
-    background-size: 15em, 15em, auto, cover; }
   /* Main */
   #main {
     background-size: 15em; }
@@ -2048,7 +2046,6 @@ body.index #main {
       padding: 1.5em 1.5em 3em 1.5em; }
   /* Banner */
   #banner {
-    background-size: 10em, 10em, auto, cover;
     padding: 6em 0; }
     #banner .inner {
       background: none;
