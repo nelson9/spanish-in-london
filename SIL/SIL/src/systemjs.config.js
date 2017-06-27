@@ -26,9 +26,11 @@
       '@angular/upgrade/static': 'npm:@angular/upgrade/bundles/upgrade-static.umd.js',
 
       // other libraries
-      'rxjs':                      'npm:rxjs',
+      'rxjs': 'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
-      'angular2-modal':            'npm:angular2-modal/bundle/angular2-modal.js'
+      'angular2-modal': 'npm:angular2-modal/bundle',
+      'angular2-modal/plugins/bootstrap': 'npm:angular2-modal/plugins',
+
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -44,14 +46,20 @@
       rxjs: {
         defaultExtension: 'js'
       },
-      'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
-      // 'angular2-modal': {
-      //   defaultExtension: 'js',
-      //   main: 'bundle/angular2-modal/angular2-modal.umd',
-      //   format: "cjs" 
-      // }
-    }   
+      'angular2-in-memory-web-api':
+      {
+        main: 'index.js', defaultExtension: 'js'
+      },
+      'angular2-modal': {
+        defaultExtension: 'js',
+        main: 'angular2-modal.rollup.umd',
+      },
+      'angular2-modal/plugins/bootstrap': {
+        defaultExtension: 'js',
+        main: 'bootstrap/bundle/angular2-modal-bootstrap.rollup.umd'
+      }
+    }
   }
   );
- 
+
 })(this);

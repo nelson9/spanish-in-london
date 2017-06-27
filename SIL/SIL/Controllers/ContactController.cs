@@ -33,7 +33,7 @@ namespace SIL.Controllers
                 UseDefaultCredentials = false,
                 Host = "smtp.gmail.com",
                 EnableSsl = true,
-                Credentials = new NetworkCredential("niall.ferguson@gmail.com", "")
+                Credentials = new NetworkCredential("niall.ferguson@gmail.com", "kissme91")
         };
             mail.Subject = "Spanish In London Contact Form: " + contactForm.Name;
             mail.Body = contactForm.Message;
@@ -46,7 +46,7 @@ namespace SIL.Controllers
             {
                 return InternalServerError();
             }
-            return Ok();
+            return Ok(contactForm);
         }
     }
 }

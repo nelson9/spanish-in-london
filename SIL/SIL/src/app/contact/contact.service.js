@@ -12,11 +12,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var http_2 = require("@angular/http");
-var Observable_1 = require("rxjs/Observable");
 require("rxjs/add/operator/catch");
-require("rxjs/add/operator/map");
 require("rxjs/add/operator/toPromise");
-///<reference path="node_modules/angular2/typings/browser.d.ts"/>
 var ContactService = (function () {
     function ContactService(http) {
         this.http = http;
@@ -27,16 +24,16 @@ var ContactService = (function () {
         var options = new http_2.RequestOptions({ headers: headers });
         return this.http.post(this.contactUrl, contact, options).toPromise()
             .then(this.extractData)
-            .catch();
+            .catch(this.handleErrorPromise);
     };
-    ContactService.prototype.handleError = function (error) {
-        console.error(error);
-        return Observable_1.Observable.throw(error.json().error || 'Server error');
+    ContactService.prototype.handleErrorPromise = function (error) {
+        console.error(error.message || error);
+        return Promise.reject(error.message || error);
     };
     ContactService.prototype.extractData = function (res) {
         var body = res.json();
-        console.log(body.data);
-        return body.data || {};
+        console.log(body);
+        return body || {};
     };
     return ContactService;
 }());

@@ -10,6 +10,8 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms"); // <-- NgModel lives here
 var http_1 = require("@angular/http");
+var angular2_modal_1 = require("angular2-modal");
+var bootstrap_1 = require("angular2-modal/plugins/bootstrap");
 var app_component_1 = require("./app.component");
 var app_routing_module_1 = require("./app-routing.module");
 var home_component_1 = require("./home/home.component");
@@ -25,7 +27,9 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             forms_1.FormsModule,
             app_routing_module_1.AppRoutingModule,
-            http_1.HttpModule
+            http_1.HttpModule,
+            angular2_modal_1.ModalModule.forRoot(),
+            bootstrap_1.BootstrapModalModule
         ],
         declarations: [
             app_component_1.AppComponent, app_routing_module_1.routableComponents, home_component_1.HomeComponent, contact_component_1.ContactComponent

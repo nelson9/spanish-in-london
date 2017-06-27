@@ -1,15 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Headers, RequestOptions } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
 
 import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
 import { Contact } from './contact';
 
-///<reference path="node_modules/angular2/typings/browser.d.ts"/>
 
 @Injectable()
 export class ContactService {
@@ -24,17 +21,20 @@ export class ContactService {
 
         return this.http.post(this.contactUrl, contact, options).toPromise()
             .then(this.extractData)
-            .catch();
+            .catch(
+                 this.handleErrorPromise
+            );
     }
 
-    private handleError(error: Response | any) {
-        console.error(error);
-        return Observable.throw(error.json().error || 'Server error');
-    }
+    private handleErrorPromise (error: Response | any) {
+	console.error(error.message || error);
+	    return Promise.reject(error.message || error);
+    }	
 
     private extractData(res: Response) {
         let body = res.json();
-        console.log(body.data);
-        return body.data || {};
+        console.log(body);
+        return body || {};
     }
 }
+
