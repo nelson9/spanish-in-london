@@ -923,13 +923,14 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: _palette(three, bg);
-		background-image: url('images/light-tl.svg'), url('images/light-tr.svg'), url('images/overlay.png'), url('../../assets/images/banner.jpg');
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: $pattern-background-size, $pattern-background-size, auto, cover;
-		color: _palette(three, fg);
+		background-image: url('../../assets/images/people-woman-coffee-meeting.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: _palette(navPanel, bg);
 		padding: 5em;
 		text-align: center;
+		opacity: 0.8;
 
 		header {
 			margin-bottom: 2em;
@@ -986,6 +987,12 @@
 				}
 			}
 
+			.wrapper {
+				&.style1 {
+					padding: 3em;
+				}
+			}
+
 	}
 
 /* Normal */
@@ -1025,6 +1032,10 @@
 				padding: 4em 3em;
 
 				&.style4 {
+					padding: 3em;
+				}
+
+				&.style1 {
 					padding: 3em;
 				}
 			}
@@ -1112,7 +1123,7 @@
 				}
 
 				&.style1 {
-					padding: 0 2.5em;
+					padding: 2.5em 2.5em;
 				}
 
 				&.style2 {
